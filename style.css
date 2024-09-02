@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+:root{
+    --Item-img-1:url('./img/screencapture-dicionario-htnfjc0su-trona-vidro-vercel-app-2024-08-25-12_31_31\ 1.png');
+    --Item-img-2:url('./img/screencapture-ide-photos-56nhjtwfj-marcos-gregs-vercel-app-2024-08-25-02_50_31\ 1.png');
+    --Item-img-3:url('./img/screencapture-one-bit-x-web-vercel-app-2024-08-25-12_32_40\ 1.png');
+    --Item-img-4: url('./img/Frame\ 2.png');
+    --Linear-Gradiente-Thumb-Item-img:linear-gradient(180deg, rgba(255,248,248,0) 25%, rgba(16,16,16,0.7707457983193278) 77%);
+    --Linear-Gradiente-Item-img: linear-gradient(90deg, rgba(16,16,16,0.927608543417367) 51%, rgba(255,248,248,0) 79%);}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+header{
+    width: 1114px;
+    max-width:80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+header a {
+    margin-right: 40px;
+}
+
+/* carousel  */
+.carousel{
+    width: 100vw;
+    height: 92vh;
+    overflow: hidden;
+    position: relative;
+}
+.carousel  .list  .item{
+    position: absolute;
+    /* position left,top,bottom and right */
+    inset: 0 0 0 0;
+}
+/* Item IMG */
+.item-img-1{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-image: var(--Linear-Gradiente-Item-img),var(--Item-img-1);
+    background-repeat: no-repeat;
+   
+}
+.item-img-2{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-image: var(--Linear-Gradiente-Item-img),var(--Item-img-2);
+    background-repeat: no-repeat;
+   
+}
+.item-img-3{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-image: var(--Linear-Gradiente-Item-img),var(--Item-img-3);
+    background-repeat: no-repeat;
+   
+}
+.item-img-4{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: var(--Linear-Gradiente-Item-img),var(--Item-img-4);
+   
+   
+}
+/* End Item img */
+
+.carousel .list .item .content{
+    position: absolute;
+
+    width:114px;
+    max-width: 70%;
+    
+    padding-right: 30%;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+
+}
+.carousel .list .item .content .author{
+    font-weight: bold;
+    letter-spacing: 2em;
+}
+.carousel .list .item .content .content-text{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.carousel .list .item .content .title,
+.carousel .list .item .content .topic{
+    max-width: 40%;
+    font-weight: bold;
+    letter-spacing: 1em;
+    font-size: 32px;
+}
+
+.carousel .list .item .content .topic{
+    color: #f1683a;
+}
+.carousel .list .item .content .des{
+    width: 30rem;
+    text-align: justify;
+}
+.carousel .list .item .content .buttons{
+    display: grid;
+    grid-template-columns: repeat(2,130px);
+    grid-template-rows: 48px;
+    gap: 5px;
+    margin-top: 20px;
+}
+.carousel .list .item .content button{
+    border:none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+/*Thumbmail  */
+
+.thumbmail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+.thumbmail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+    
+   
+
+}
+/* Thumb item img */
+.thumbmail-item-img-1{
+    border-radius: 20px;
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+   background-repeat: no-repeat;
+    background-image: var(--Linear-Gradiente-Thumb-Item-img),var(--Item-img-1);
+   
+}
+.thumbmail-item-img-2{
+    border-radius: 20px;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: var(--Linear-Gradiente-Thumb-Item-img),var(--Item-img-2);
+   
+}
+.thumbmail-item-img-3{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: var(--Linear-Gradiente-Thumb-Item-img),var(--Item-img-3);
+   
+}
+.thumbmail-item-img-4{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: var(--Linear-Gradiente-Thumb-Item-img),var(--Item-img-4);
+   
+   
+}
+/* End Item img */
+
+.thumbmail .item .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    
+}
+.thumbmail .item .content .title,.thumbmail .item .content .des{
+    font-weight: bold;
+    color: #e8dddd;
+}
+
+
+
+/* Arrows */
+
+.arrows{
+    position:absolute;
+    top: 90%;
+    right: 55%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items:  center;
+}
+
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border: none;
+    font-family: monospace;
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.arrows button:hover{
+    background-color: #eee;
+    color: #555;
+}
+/* Starting effcts config */
+
+.carousel .list .item:nth-child(1){
+    z-index: 1;
+}
+
+.carousel .list .item:nth-child(1) .content-text .author,
+.carousel .list .item:nth-child(1) .content-text .title,
+.carousel .list .item:nth-child(1) .content-text .topic,
+.carousel .list .item:nth-child(1) .content-text .des,
+.carousel .list .item:nth-child(1) .content-text .buttons{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+/* Config blur */
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.carousel .list .item:nth-child(1) .content-text .title{
+    animation-delay: 1.2s;
+}
+.carousel .list .item:nth-child(1) .content-text .topic{
+    animation-delay: 1.4s;
+}
+
+.carousel .list .item:nth-child(1) .content-text .des{
+    animation-delay: 1.6s;
+}
+
+/* Effect next click */
+
+.carousel.next .list .item:nth-child(1){
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    
+    left: 50%;
+    bottom: 0%;
+    border-radius: 20px;
+    animation: showImage 1s linear 1 forwards;
+
+}
+
+@keyframes showImage {
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+    
+}
+
+.carousel.next .thumbmail .item:nth-last-child(1) .content img{
+    width: 0;
+    overflow: hidden;
+    animation: showThumbmail .5s linear forwards;
+
+}
+@keyframes showThumbmail {
+    to{
+        width: 150px;
+    }    
+}
+
+.carousel.next .thumbmail{
+    transform: translateX(150px);
+    animation: transformThumbmail .5s linear 1 forwards;
+}
+
+@keyframes transformThumbmail {
+    to{
+        transform: translateX(0);
+    }
+}
+
+.carousel.prev .list .item:nth-child(2){
+    z-index: 2;
+}
+.carousel.prev .list .item:nth-child(2) {
+    z-index: 2;
+    bottom:0;
+    left: 0;
+    animation: outImage 1s linear 1 forwards;
+    
+}
+
+@keyframes outImage {
+    to{
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        left: 100%;
+        bottom: 100%;
+    }
+}
+
+.carousel.prev .thumbmail .item:nth-child(1) .content{
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbmail 0.5s linear forwards;
+}
+
+.carousel.next .list .item:nth-child(2) .content-text .author,
+.carousel.next .list .item:nth-child(2) .content-text .title,
+.carousel.next .list .item:nth-child(2) .content-text .topic,
+.carousel.next .list .item:nth-child(2) .content-text .des,
+.carousel.next .list .item:nth-child(2) .content-text .buttons{
+   
+    animation: contentOut 1.5s 1s linear 1 forwards;
+}
+
+@keyframes contentOut {
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+
+
+
+/* Time Config */
+.time{
+    width: 0%;
+    height: 5px;
+    background-color: #f1683a;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.carousel.next .time,
+.carousel.prev .time{
+    width: 100%;
+    animation: timeRunning 2s linear 1 forwards;
+}
+@keyframes timeRunning{
+    to{
+        width: 0;
+    }
+
+}
